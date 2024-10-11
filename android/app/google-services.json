@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496083964307",
+    "project_id": "rich-furniture-43b22",
+    "storage_bucket": "rich-furniture-43b22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496083964307:android:4d4d2a06f02cd781759866",
+        "android_client_info": {
+          "package_name": "com.example.richfurniture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc7rhwJgfH3f5geBvZil5Kk2BRYNE6EEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
