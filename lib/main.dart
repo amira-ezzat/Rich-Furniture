@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:rich_furniture/settings/uploadImage.dart';
 import 'firebase_options.dart';
 import 'Home.dart';
 
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
             ],
           ),
           debugShowCheckedModeBanner: false,
-          home: MyHomePage(),
+          home: HomeScreen(),
         );
       },
     );

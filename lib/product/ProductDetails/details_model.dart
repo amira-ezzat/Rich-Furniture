@@ -4,7 +4,7 @@ final List<Product> bedroomProducts = [
   Product(
     name: 'غرفة نوم طوكيو',
     newPrice: 25.000,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/tokyo-master_1800x1800.jpg?v=1647010896',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862726986.png?alt=media&token=5d898bf9-dc6c-42c2-a438-130534a9238c',
     description:  '• سرير\n'
         '• دولاب\n'
         '• عدد 2 كمود\n'
@@ -28,7 +28,7 @@ final List<Product> bedroomProducts = [
   Product(
     name: 'غرفة نوم بولو',
     newPrice: 20.200,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/6_a1e0be89-9437-4a13-a05e-5b8a02c1fd6c_1800x1800.jpg?v=1714558583',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862771037.png?alt=media&token=6c3ceb53-c510-4589-9551-be78cb12428c',
     description: '• سرير 160 سم أو سرير 180 سم\n'
         '• دولاب جرار\n'
         '• عدد 2 كمود\n'
@@ -55,7 +55,7 @@ final List<Product> bedroomProducts = [
   Product(
     name: 'غرفة نوم نيو ميلانو',
     newPrice: 30.390,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/85632096d3fc46da4dbf15e71b696da4_1800x1800.jpg?v=1699888668',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862837824.png?alt=media&token=8dd3355d-a677-4cc9-b6d1-22e947283e43',
     description:'• سرير\n'
         '• دولاب\n'
         '• عدد 2 كمود\n'
@@ -78,7 +78,7 @@ final List<Product> bedroomProducts = [
   Product(
     name: 'غرفة نوم يارن',
     newPrice: 20.000,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/1_506eb3cd-4c42-47bd-b24b-db9cab668afd_1800x1800.jpg?v=1612941841',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862897609.png?alt=media&token=c1a5bf8e-66bf-45a9-95fb-24487b3dac8f',
     description:   '• سرير\n'
         '• دولاب\n'
         '• عدد 2 كمود\n'
@@ -102,7 +102,7 @@ final List<Product> bedroomProducts = [
   Product(
     name: 'غرفة نوم موسكو',
     newPrice:18.990 ,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/2_6_1800x1800.jpg?v=1721207066',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862936010.png?alt=media&token=d67246ed-7db9-486a-a4f2-6b23df8998a2',
     description: '• سرير\n'
         '• دولاب\n'
         '• عدد 2 كمود\n'
@@ -126,7 +126,7 @@ final List<Product> bedroomProducts = [
   Product(
       name: 'غرفة نوم نيو جولد',
       newPrice:30.290 ,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/2_4bca0375-e321-4b1b-8060-b8572dad919e_1800x1800.jpg?v=1678022172',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862966246.png?alt=media&token=d63b92a3-3a47-4e22-b5f8-9affb31d10c0',
       description: '• سرير\n'
           '• دولاب\n'
           '• عدد 2 كمود\n'
@@ -153,7 +153,7 @@ final List<Product> bedroomProducts = [
   Product(
       name: 'غرفة نوم ليندا',
       newPrice: 20.000,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/1_e4f47af2-4cca-4be6-94e5-916875867fcb_1800x1800.jpg?v=1691504347',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728863020181.png?alt=media&token=8cbbbb5b-8da6-4afb-a014-6e27f47864ee',
       description:  '• سرير\n'
           '• دولاب\n'
           '• عدد 2 كمود\n'
@@ -175,7 +175,7 @@ final List<Product> bedroomProducts = [
   Product(
       name: 'غرفة نوم صوفا',
       newPrice: 30.990,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/1_ab298b0e-6cf7-4000-96fb-63c61c29854e_1800x1800.jpg?v=1710243059',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728863064165.png?alt=media&token=f8aeebee-76d1-4343-9c00-7adb3470930b',
       description: '• سرير\n'
           '• دولاب\n'
           '• عدد 2 كمود\n'
@@ -201,7 +201,7 @@ final List<Product> kidsRoomProducts = [
   Product(
     name: 'غرفة اطفال تيفاني',
     newPrice: 18.580,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/Kabbani-bedrom-Tefani_82f5f1ed-6284-4d65-aab0-26a7b8dbb557_1800x1800.jpg?v=1637696862',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902687600.png?alt=media&token=c16d3d2c-e22f-4e97-892e-7998d19164d4',
     description:   'سرير\n'
         'دولاب\n'
         'كمود\n'
@@ -227,7 +227,7 @@ final List<Product> kidsRoomProducts = [
   Product(
     name: 'غرفة اطفال يارن ',
     newPrice: 17.910,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/yarn_1800x1800.jpg?v=1620806955',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902745799.png?alt=media&token=10cdebcf-472d-49f7-99bd-73bfc919dcf1',
     description: 'سرير\n'
         'دولاب\n'
         'كمود\n'
@@ -253,7 +253,7 @@ final List<Product> kidsRoomProducts = [
   Product(
     name: 'غرفة اطفال تيفاني دورين',
     newPrice: 20.220,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/2_4_1800x1800.jpg?v=1721050136',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902789764.png?alt=media&token=215bd8b0-6533-454f-9644-d4525d084980',
     description:'140 سم دولاب مفصلي\n'
         'مكتب بـ رف\n'
         'سرير علوي\n'
@@ -277,7 +277,7 @@ final List<Product> kidsRoomProducts = [
   Product(
     name: 'غرفة كابرس ',
     newPrice: 15.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/19_7a7509a6-651d-45d9-8414-74bd41f33a46_1800x1800.jpg?v=1695475254',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902837870.png?alt=media&token=d61cf0ff-7042-45be-929a-149c0aa26400',
     description:   'سرير\n'
         'دولاب\n'
         'كمود\n\n'
@@ -302,7 +302,7 @@ final List<Product> kidsRoomProducts = [
   Product(
     name: 'غرفة اطفال سيتي',
     newPrice: 16.150,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/4_4381dbfd-b828-45bd-8472-542888947e95_1800x1800.jpg?v=1723285709',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902872987.png?alt=media&token=65750026-d31c-4e24-ae0e-cec17253c695',
     description:  'عدد 2 سرير\n'
         'دولاب 120 سم\n'
         'مكتب 110 سم\n'
@@ -326,7 +326,7 @@ final List<Product> kidsRoomProducts = [
   Product(
     name: 'غرفة اطفال مقبض',
     newPrice:19.300,
-    imageUrl: 'https://wuilt-assets-v2-dev.s3.amazonaws.com/cl2bca2p801du396zt1z5a24s_IMG-20210928-WA0052.jpg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902917381.png?alt=media&token=d2e56c84-c9f1-48ad-b7ac-003d0a6cb71b',
     description: '\nالغرفة مُصنعة بالكامل من الخامات الطبيعية 100% حيث أن'
         ' القوائم من الأخشاب الزان الروماني الأحمر، والمسحطات \n'
         'من الأبلاكاش ال ث الروسي 3 مم بتقنية الكبس الحراري.\n\n'
@@ -342,7 +342,7 @@ final List<Product> kidsRoomProducts = [
   Product(
       name: 'غرفه اطفال-SAM1',
       newPrice:20.000 ,
-      imageUrl: 'https://chichomz.com/cdn/shop/files/C2_bf16c0fc-f949-40cb-bb1b-1ec3e851581f.jpg?v=1718026208&width=1100',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728902949882.png?alt=media&token=b1f021c9-031a-4ac7-aaaa-97ea390d55e7',
       description: 'عدد القطع:4 (2سرير + دولاب + كومود)\n\n'
           'السرير:\n'
           '- الطول: 200 سم\n'
@@ -362,7 +362,7 @@ final List<Product> kidsRoomProducts = [
   Product(
       name: 'غرفه اطفال سما',
       newPrice:19.000 ,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/Sama-100_1800x1800.jpg?v=1694685328',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728861336215.png?alt=media&token=6bd2d145-44e2-422d-8c11-f18d82ec04b2',
       description: 'عدد القطع: سرير + دولاب + كمود + تسريحة + مرايا\n\n'
           'المواصفات:\n\n'
           'الخامات:\n'
@@ -385,7 +385,7 @@ final List<Product> tablesProducts = [
   Product(
     name: 'ترابيزة تليفزيون ',
     newPrice: 2.000,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/gtv120L_1800x1800.jpg?v=1618990375',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903718647.png?alt=media&token=297537b1-b480-4f0f-86e7-9bcb8239d3df',
     description:'تحتوي على أدراج لوضع الأجهزة الكهربائية\n'
         'مناسبة لمساحات التليفزيون الكبيرة\n'
         'مزودة بفتحات من الخلف لخروج الأسلاك\n\n'
@@ -403,7 +403,7 @@ final List<Product> tablesProducts = [
   Product(
     name: 'وحدة تلفزيون أتلانتا',
     newPrice: 3.000,
-    imageUrl:'https://www.kabbanifurniture.com/cdn/shop/files/6F4A9355-copy_1800x1800.jpg?v=1711456834',
+    imageUrl:'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903797157.png?alt=media&token=b8cedfca-71bb-405c-a00c-a479998920e8',
     description:
     'تحتوي على أدراج ودرف لوضع الأجهزة الكهربائية\n'
         'الخامة الأساسية:\n'
@@ -420,7 +420,7 @@ final List<Product> tablesProducts = [
   Product(
     name: 'ترابيزة تليفزيون',
     newPrice: 2.390,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/GTV4_1800x1800.jpg?v=1711184547',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903830189.png?alt=media&token=cc508416-dd5e-4079-81dc-c1358c53b95d',
     description: '• تحتوي علي أدراج لوضع الاجهزة الكهربية\n'
         '• مناسبة لمساحات التليفزيون الكبيرة\n'
         '• مزودة بفتحات من الخلف لخروج الأسلاك\n'
@@ -435,7 +435,7 @@ final List<Product> tablesProducts = [
   Product(
     name: 'ترابيزة وسط بابلي',
     newPrice: 2.490,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/da97980a50cbc3528faeb66e88f94066_1800x1800.jpg?v=1711276554',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903865431.png?alt=media&token=abee3513-21ba-444c-9c6f-ff850d73a7bf',
     description:  '• ستانليس بيور (معدن) لون ذهبي\n'
         '• طلاء PVD مقاوم للصدأ\n'
         '• زجاج سيكوريت مقاوم للكسر',
@@ -443,7 +443,7 @@ final List<Product> tablesProducts = [
   Product(
     name: 'ترابيزة وسط G1',
     newPrice: 900,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/G1-middle-table-kabbani-_1_1800x1800.jpg?v=1584194082',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903894410.png?alt=media&token=adc73d19-87b5-4318-b476-4986abc8e6ff',
     description:'• MDF\n'
         '• طلاء عالي الجودة\n\n'
         'ضمان\n'
@@ -456,7 +456,7 @@ final List<Product> tablesProducts = [
   Product(
       name: 'وحدة تلفزيون سفير',
       newPrice: 2.990,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/5_830eac8b-742a-4201-824b-0f1628eaed58_1800x1800.jpg?v=1719584178',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903933677.png?alt=media&token=004578b7-f97d-4ae2-90c8-7d223ad9f2ef',
       description: '• تحتوي على أدراج ودرف لوضع الأجهزة الكهربائية\n\n'
           'الخامة الأساسية\n'
           '• خشب SONTA بطريقة MDF\n'
@@ -472,7 +472,7 @@ final List<Product> tablesProducts = [
   Product(
       name: 'ترابيزة تليفزيون',
       newPrice: 1.690,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/GTV160-L_1800x1800.jpg?v=1618990374',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728903979609.png?alt=media&token=6db83a9f-f710-4c2d-abf8-2a376c17d28b',
       description:  'تحتوي على أدراج لوضع الأجهزة الكهربائية\n'
           'مناسبة لمساحات التلفزيون الكبيرة\n'
           'مزودة بفتحات من الخلف لخروج الأسلاك\n\n'
@@ -490,7 +490,7 @@ final List<Product> tablesProducts = [
   Product(
       name: 'ترابيزة وسط T-16',
       newPrice: 3.590,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/2_02b4b70d-3ee1-4155-b713-7c4e261cc007_1800x1800.jpg?v=1695571050',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728904012381.png?alt=media&token=84530fb0-ff57-4c74-8f3e-b15c25fd48de',
       description: '• مكون من\n'
           '  • ترابيزه وسط\n'
           '  • 2 بوف بوحده تخزين\n'
@@ -510,7 +510,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة SHK-2',
     newPrice: 1.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/6_2705279c-f2ad-4554-a6f2-f2adc4c4191e_1800x1800.jpg?v=1668603005',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906567763.png?alt=media&token=d01a87d1-d2c0-4085-aeba-caa7ef0ac828',
     description:'. ضلف كبيرة تسع لعدد كبير من الاحذية\n'
         '. إكسسوارات معدنية ذات جوده عالية\n'
         '. الخامة الأساسية\n\n'
@@ -527,7 +527,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة ستار',
     newPrice: 2.190,
-    imageUrl:'https://www.kabbanifurniture.com/cdn/shop/products/3_c91ea627-626d-4d61-b5af-a4cba6b93c10_1800x1800.jpg?v=1668602922',
+    imageUrl:'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906603760.png?alt=media&token=194b14f3-4a7c-4d07-83e5-9a59930c7297',
     description: '• تحتوى على درج للأحتفاظ بالأغراض المختلفة\n'
         '• ضلف كبيرة تسع لعدد كبير من الاحذية\n'
         '• أرفف جانبية\n\n'
@@ -540,7 +540,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة بورت شابوه',
     newPrice: 2.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/KSH-601_1800x1800.jpg?v=1679052425',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906650297.png?alt=media&token=52bd0505-85c9-42f9-9502-928962635cae',
     description: 'يحتوى على درج للأحتفاظ بالأغراض المختلفة\n'
         '3 ضلفة تسع لعدد كبير من الاحذية\n'
         'رف سفلي\n'
@@ -554,7 +554,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة بورت شابوه',
     newPrice: 3.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/1_38acf26b-97ec-4da4-a681-ef1243b00bcc_1800x1800.jpg?v=1609500709',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906683386.png?alt=media&token=fc2b8fe5-b67f-4853-b383-acef62be3973',
     description:  'درج للأحتفاظ بالأغراض المختلفة\n'
         'ضلفة كبيرة تسع لعدد كبير من الاحذية\n'
         'درجان للتخزين\n'
@@ -564,7 +564,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة بورت شابوه',
     newPrice: 2.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/3_084d635c-659c-4475-97b4-79a7a4ffb8d5_1800x1800.jpg?v=1609500708',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906741015.png?alt=media&token=b82a48d3-a79b-498b-8e7c-41e44c86d3b5',
     description:'درج للأحتفاظ بالأغراض المختلفة\n'
         'ضلف كبيرة تسع لعدد كبير من الاحذية\n'
         'درج للتخزين\n'
@@ -575,7 +575,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة بورت شابوه',
     newPrice: 3.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/KSH-609_1800x1800.jpg?v=1659019441',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906766450.png?alt=media&token=f751f8fb-f675-4d32-b12d-bf6520a71e0a',
     description: 'ضلف كبيرة تسع لعدد كبير من الأحذية\n'
         'درج للتخزين\n'
         'إكسسوارات تركيب معدنية ذات جودة عالية\n'
@@ -585,7 +585,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة تيفاني دورين',
     newPrice: 4.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/9c2d434f4c730ea1d87e460efc02792c_1800x1800.jpg?v=1709480267',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906800211.png?alt=media&token=a3a1eb28-95e6-432c-afaf-3c98ec642bef',
     description:  'ضلف كبيرة تسع لعدد كبير من الأحذية\n'
         'بها درجين للتخزين\n'
         'إكسسوارات تركيب معدنية ذات جودة عالية\n\n'
@@ -598,7 +598,7 @@ final List<Product> tableshoosProducts = [
   Product(
     name: 'جزامة تيفاني',
     newPrice: 7.490,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/4_eb04146d-4bea-4243-a4f8-8001c5ea6952_1800x1800.jpg?v=1668602956',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906859981.png?alt=media&token=fa402f05-e2b6-4b3a-8463-8c0934a18489',
     description:  'ضلف كبيرة تسع لعدد كبير من الأحذية\n'
         'درج للتخزين\n'
         'إكسسوارات تركيب معدنية ذات جودة عالية\n\n'
@@ -613,7 +613,7 @@ final List<Product> livingroomProducts = [
   Product(
     name: 'أنتريه ماكس',
     newPrice: 12.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/2.._1800x1800.jpg?v=1725362367',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906260763.png?alt=media&token=d7f5ee92-35d8-436f-9dec-d3c721b56b3f',
     description: 'كنبة ثلاثية\n'
         'كنبة ثنائية\n'
         'فوتيه\n\n'
@@ -632,7 +632,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: 'أنتريه كازا',
       newPrice: 11.990,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/1_4bcc3262-34e8-41ff-adec-67300721de60_1800x1800.jpg?v=1715864011',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906297682.png?alt=media&token=9082bb9a-1f43-4216-8696-f0f6dd97c9ae',
       description:'عدد 2 كنبة ثلاثية\n'
           'فوتيه\n\n'
           'المواصفات:\n\n'
@@ -653,7 +653,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: 'صالون لوريان',
       newPrice: 15.200,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/3_1_0cf725ea-a702-4ec5-8b1f-5f686cb9fa39_1800x1800.jpg?v=1716815882',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906324036.png?alt=media&token=b865dcc6-237c-4500-9490-cd3defc57637',
       description:  'كنبة ثنائية\n'
           'عدد 2 فوتيه\n'
           'ترابيزة وسط\n'
@@ -674,7 +674,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: 'أنتريه سكاي',
       newPrice: 12.220,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/3_cb5a0fd7-a141-4fc2-8cc4-523961002a10_1800x1800.jpg?v=1701103088',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906352353.png?alt=media&token=7366bf51-141d-4443-b941-9dbd2cdd7f63',
       description:'كنبة ثلاثية\n'
           'كنبة ثنائية\n'
           'فوتيه\n\n'
@@ -693,7 +693,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: 'أنتريه كوبا',
       newPrice:9.990 ,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/05_1800x1800.jpg?v=1700757948',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906352353.png?alt=media&token=7366bf51-141d-4443-b941-9dbd2cdd7f63',
       description: 'عدد 2 كنبة ثلاثية\n'
           'فوتيه\n\n'
           'المواصفات:\n\n'
@@ -713,7 +713,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: 'ركنة ڤيرا',
       newPrice:10.990 ,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/4_6_1800x1800.jpg?v=1722778595',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906434406.png?alt=media&token=0c75d966-5b10-4972-82bc-c4656d42be3d',
       description:  'خشب الزان الطبيعي\n'
           'قماش كتان عالي الجودة\n'
           'إسفنج سوفت\n\n'
@@ -727,7 +727,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: 'أنتريه أوبرا',
       newPrice:13.990 ,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/4_27f046a6-d4de-4b38-9cfb-0c4a657a6bd8_1800x1800.jpg?v=1710240473',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906461556.png?alt=media&token=590db7ed-2da3-4096-9484-280031eb67e9',
       description:'كنبة ثلاثية\n'
           'كنبة ثنائية\n'
           'فوتيه\n\n'
@@ -748,7 +748,7 @@ final List<Product> livingroomProducts = [
   Product(
       name: ' ركنة نايس',
       newPrice: 10.990,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/15be494b66891c9c42b928f0f7f70cca_1800x1800.jpg?v=1678023747',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906487568.png?alt=media&token=49e762fe-ec14-4b20-9455-d8cbd2f78887',
       description:'خشب الزان الطبيعي\n'
           'قماش كتان\n'
           'إسفنج متوسط الكثافة\n'
@@ -768,7 +768,7 @@ final List<Product> diningProducts = [
   Product(
     name: 'غرفة سفرة مرمر',
     newPrice:10.000 ,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/3_d7aa2af0-a255-4dd9-a917-ed68390a24f6_1800x1800.jpg?v=1721906914',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728905960352.png?alt=media&token=dd1b4ca2-b904-40cd-830f-49c45398366b',
     description: 'ترابيزة سفرة\n'
         'عدد 6 كراسي\n'
         'نيش\n'
@@ -790,7 +790,7 @@ final List<Product> diningProducts = [
   Product(
       name: 'غرفة سفرة أتلانتا',
       newPrice: 10.990,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/11_b5804ca5-dcc9-4928-b648-f3e9921a67ba_1800x1800.jpg?v=1695137703',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728905991738.png?alt=media&token=2210ba7a-6bb0-4759-be6e-bd6bbf929a91',
       description:'ترابيزة سفرة\n'
           '6 كراسي\n'
           'نيش\n'
@@ -815,7 +815,7 @@ final List<Product> diningProducts = [
   Product(
       name: 'غرفة سفرة باريس ',
       newPrice: 8.190,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/Paris_1800x1800.jpg?v=1658914447',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906022810.png?alt=media&token=ae22bd37-3ab8-4de7-a6c0-b99e22867c7a',
       description:'ترابيزة سفرة\n'
           'عدد 6 كراسي\n'
           'نيش\n'
@@ -836,7 +836,7 @@ final List<Product> diningProducts = [
   Product(
       name: 'غرفة سفرة ريو',
       newPrice: 9.500,
-      imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/Rio_1800x1800.jpg?v=1699347404',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906053108.png?alt=media&token=24b5d070-6590-4c24-a143-9544ca83fcfb',
       description: 'ترابيزة سفرة\n'
           'عدد 6 كراسي\n'
           'نيش\n'
@@ -858,7 +858,7 @@ final List<Product> diningProducts = [
   Product(
     name: 'ترابيزة سفرة T12 ',
     newPrice: 6.990,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/Kabbani-dining-New-t12_1800x1800.jpg?v=1633440497',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906083926.png?alt=media&token=8ce0f272-a956-4dfb-9297-54d813b667c8',
     description:   'ترابيزة سفرة\n'
         'عدد 6 كراسي\n'
         'الخامات:\n'
@@ -878,7 +878,7 @@ final List<Product> diningProducts = [
   Product(
     name: 'غرفة سفرة لاتيه',
     newPrice:7.200,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/6_25155fa2-1d18-4b0f-a95d-043933bde038_1800x1800.jpg?v=1718089764',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906112815.png?alt=media&token=1def204c-7347-416c-838d-ab0d182ce71e',
     description: 'ترابيزة سفرة\n'
         'عدد 6 كراسي\n'
         'نيش\n'
@@ -901,7 +901,7 @@ final List<Product> diningProducts = [
   Product(
     name: 'غرفة سفرة مرمر',
     newPrice:9.000,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/files/3_d7aa2af0-a255-4dd9-a917-ed68390a24f6_1800x1800.jpg?v=1721906914',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906139533.png?alt=media&token=2be73a34-8c85-4e91-b5e3-997a26a06b67',
     description:  'ترابيزة سفرة\n'
         'عدد 6 كراسي\n'
         'نيش\n'
@@ -924,7 +924,7 @@ final List<Product> diningProducts = [
   Product(
     name: 'غرفة سفرة بلاك',
     newPrice: 9.240,
-    imageUrl: 'https://www.kabbanifurniture.com/cdn/shop/products/45_1800x1800.jpg?v=1681814595',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728906168835.png?alt=media&token=91ea1ef4-e0d1-4aff-9734-338d251da486',
     description:   'ترابيزة سفرة\n'
         'عدد 6 كراسي\n'
         'نيش\n'
@@ -948,7 +948,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:33.990 ,
-    imageAsset: 'assets/image/1.jpg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857389437.png?alt=media&token=3e5d9b74-6932-4de0-88aa-62820e8895af',
     description:  'ميزي بهذا المطبخ الخشبي بتصميم مودرن يعطي إيحاء بالفخامة\n'
         'والبساطة مع خشب شيبورد معالج مقاوم للماء والعفن والأسطح \n'
         'المكونة من رخام صناعي فاخر مقاوم للتبقع والكسر.\n\n'
@@ -964,7 +964,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:33.990 ,
-    imageAsset: 'assets/image/4.jpg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857710978.png?alt=media&token=840e24dd-c245-412c-b2d9-c11d86f72d89',
     description:
         'تتميز هذه النوعية من المطابخ بمقاومتها العالية للرطوبة والحرارة والخدوش، كما أنها سهلة التنظيف والصيانة.\n'
         'تتكون هذه المطابخ من لوحات مغلفة بطبقة من البلاستيك المقاوم للحرارة والرطوبة، ويتم تثبيت هذه اللوحات \n'
@@ -980,7 +980,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:33.990 ,
-    imageAsset: 'assets/image/5.jpg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857810709.png?alt=media&token=34f597a2-35c6-459a-b936-da89b9f2488c',
     description:
     'تتميز هذه النوعية من المطابخ بمقاومتها العالية للرطوبة والحرارة والخدوش، كما أنها سهلة التنظيف والصيانة.\n'
         'تتكون هذه المطابخ من لوحات مغلفة بطبقة من البلاستيك المقاوم للحرارة والرطوبة، ويتم تثبيت هذه اللوحات \n'
@@ -996,7 +996,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:33.990 ,
-    imageAsset: 'assets/image/2.jpg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857590284.png?alt=media&token=bb23ff19-7d95-4dac-a51a-86871ad14381',
     description:
     'تتميز هذه النوعية من المطابخ بمقاومتها العالية للرطوبة والحرارة والخدوش، كما أنها سهلة التنظيف والصيانة.\n'
         'تتكون هذه المطابخ من لوحات مغلفة بطبقة من البلاستيك المقاوم للحرارة والرطوبة، ويتم تثبيت هذه اللوحات \n'
@@ -1012,7 +1012,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:30.000 ,
-    imageAsset: 'assets/image/6.jpeg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857883447.png?alt=media&token=25e6a169-2ad7-43b5-a9da-54bffb85144b',
     description:
     'تتميز هذه النوعية من المطابخ بمقاومتها العالية للرطوبة والحرارة والخدوش، كما أنها سهلة التنظيف والصيانة.\n'
         'تتكون هذه المطابخ من لوحات مغلفة بطبقة من البلاستيك المقاوم للحرارة والرطوبة، ويتم تثبيت هذه اللوحات \n'
@@ -1028,7 +1028,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ صاج مودرن',
     newPrice:33.000 ,
-    imageAsset: 'assets/image/3.png',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728849127753.png?alt=media&token=e851d97a-53c5-4b2f-b4b4-b3df37bffb8b',
     description: 'فصلي مطبخ عملي يدعم الاستدامة مع حداثة\n'
         'التصميم المصنوع من الصاج المقاوم للماء والصدأ\n'
         'مع رخام صناعي فاخر لامع مقاوم للبقع والكسر \n'
@@ -1045,7 +1045,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:29.990 ,
-    imageAsset: 'assets/image/7.jpeg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857945454.png?alt=media&token=ed0773d1-2321-448e-8683-5a69b250e90d',
     description:
     'تتميز هذه النوعية من المطابخ بمقاومتها العالية للرطوبة والحرارة والخدوش، كما أنها سهلة التنظيف والصيانة.\n'
         'تتكون هذه المطابخ من لوحات مغلفة بطبقة من البلاستيك المقاوم للحرارة والرطوبة، ويتم تثبيت هذه اللوحات \n'
@@ -1061,7 +1061,7 @@ final List<Product> kitchenProducts = [
   Product(
     name: 'مطبخ خشبي مودرن',
     newPrice:30.990 ,
-    imageAsset: 'assets/image/8.jpeg',
+    imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728857988162.png?alt=media&token=681c6627-f5b2-4b81-8e10-abfac24b46e2',
     description:
     'تتميز هذه النوعية من المطابخ بمقاومتها العالية للرطوبة والحرارة والخدوش، كما أنها سهلة التنظيف والصيانة.\n'
         'تتكون هذه المطابخ من لوحات مغلفة بطبقة من البلاستيك المقاوم للحرارة والرطوبة، ويتم تثبيت هذه اللوحات \n'

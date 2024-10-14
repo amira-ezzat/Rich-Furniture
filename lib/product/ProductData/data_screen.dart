@@ -77,6 +77,7 @@ class ProductCard extends StatelessWidget {
               height: kIsWeb ? 200 : 180,
               width: double.infinity,
               fit: BoxFit.cover,
+
             )
           else if (product.imageAsset != null &&
               product.imageAsset!.isNotEmpty)
