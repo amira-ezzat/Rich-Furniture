@@ -4,6 +4,8 @@ final List<Product> bedroomProducts = [
   Product(
     name: 'غرفة نوم طوكيو',
     newPrice: 25.000,
+    image1: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862726986.png?alt=media&token=5d898bf9-dc6c-42c2-a438-130534a9238c',
+    image2: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862726986.png?alt=media&token=5d898bf9-dc6c-42c2-a438-130534a9238c',
     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fweb-image-1728862726986.png?alt=media&token=5d898bf9-dc6c-42c2-a438-130534a9238c',
     description:  '• سرير\n'
         '• دولاب\n'

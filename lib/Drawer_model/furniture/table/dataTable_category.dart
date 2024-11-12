@@ -2,32 +2,33 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:rich_furniture/Drawer_model/furniture/bed/bed_categ.dart';
+import 'package:rich_furniture/Drawer_model/furniture/chair/chair_categ.dart';
+import 'package:rich_furniture/Drawer_model/furniture/table/table_category.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../Drawer_model/drawer.dart';
-import '../../appBar/Bar.dart';
-import '../../appBar/appBarr_phone.dart';
-import '../ProductDetails/details_screen.dart';
-import 'dataDetails_model.dart';
-
-class ProductGridScreen extends StatefulWidget {
+import '../../../../appBar/Bar.dart';
+import '../../../../appBar/appBarr_phone.dart';
+import '../../../../home/catogery_home.dart';
+import '../../../../product/ProductData/dataDetails_model.dart';
+import '../../../../product/ProductDetails/details_screen.dart';
+import '../../drawer.dart';
+class DataTableCatogryProduct extends StatefulWidget {
   final List<Product> products;
   final String title;
 
-  const ProductGridScreen({
+  const DataTableCatogryProduct({
     super.key,
     required this.products,
     required this.title,
   });
 
   @override
-  _ProductGridScreenState createState() => _ProductGridScreenState();
+  State<DataTableCatogryProduct> createState() => _DataTableCatogryProductState();
 }
 
-class _ProductGridScreenState extends State<ProductGridScreen> {
+class _DataTableCatogryProductState extends State<DataTableCatogryProduct> {
   late List<Product> sortedProducts;
-
-  @override
   void initState() {
     super.initState();
     sortedProducts = List.from(widget.products);
@@ -39,11 +40,11 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
       ascending ? a.newPrice.compareTo(b.newPrice) : b.newPrice.compareTo(a.newPrice));
     });
   }
-
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
     var screenHeight = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.height;
 
     var crossAxisCount = screenWidth > 1200 ? 4 : screenWidth > 800 ? 3 : 2;
 
@@ -58,10 +59,10 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Row(
+              child:Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8,),
                   OutlinedButton(
                     onPressed: () {
                       showMenu(
@@ -70,17 +71,19 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                         items: [
                           PopupMenuItem(
                             value: 'LowToHigh',
-                            child: Text(
-                              'السعر: من الاقل للاكثر',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاقل للاكثر',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                           PopupMenuItem(
                             value: 'HighToLow',
-                            child: Text(
-                              'السعر: من الاكثر للاقل',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاكثر للاقل',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                         ],
                       ).then((value) {
@@ -93,21 +96,74 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                     },
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Color(0xFF964B00),
-                      backgroundColor: Colors.white,
-                      side: BorderSide(color: Color(0xFF964B00)),
+                      backgroundColor: Colors.white,               // Text color
+                      side: BorderSide(color: Color(0xFF964B00)), // Border color
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(8), // Rounded corners
                       ),
                     ),
-                    child: Text(
-                      'تصفية النتائج',
-                      style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                    ),
+                    child: Text('تصفية النتائج',
+                      style: TextStyle(
+                          fontFamily: 'arb',
+                          fontWeight: FontWeight.bold
+                      ),),
+                  ),
+                  Builder(
+                    builder: (context) {
+                      return PopupMenuTheme(
+                        data: PopupMenuThemeData(
+                          color: Colors.white,
+                        ),
+                        child: Container(),
+                      );
+                    },
                   ),
                 ],
               ),
+
             ),
+            // Horizontal scrollable FurnitureCards
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    FurnitureCard(
+                      title: 'ترابيزة سفرة',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/img%2F%D8%B3%D9%81%D8%B1%D9%87.jpg?alt=media&token=bdb7bd8d-272d-48d9-9b98-7c2c9e934848',
+                      products: didingTableProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'جانبية خشبية',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/img%2F%D8%AC%D9%86%D8%A8%D8%AE%D8%B4.jpg?alt=media&token=13d4fa1b-d143-4f83-aec1-4fd0d7e73cdb',
+                      products: sidwoodTableProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'وسط خشبي',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/img%2F%D9%88%D8%B3%D8%AE%D8%B4.jpg?alt=media&token=d9597bcc-cda6-42e4-b281-fb424b9bd3c2',
+                      products: midwoodTableProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'كونسول خشبي',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/img%2F%D9%83%D9%88%D9%86%D8%AE%D8%B4.jpg?alt=media&token=060b136b-a1ce-402d-a2e4-acdc92409268',
+                      products: conwoodTableProducts,
+                    ),
+
+
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 2,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Wrap(
@@ -267,8 +323,6 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
   }
 }
 
-
-
 class ProductCard extends StatelessWidget {
   final Product product;
 
@@ -299,9 +353,10 @@ class ProductCard extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: screenWidth > 600 ? 25 : 16,
-                      fontFamily: 'arb'),
+                    fontWeight: FontWeight.bold,
+                    fontSize: screenWidth > 600 ? 25 : 16,
+                    fontFamily: 'arb',
+                  ),
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                 ),

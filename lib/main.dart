@@ -1,21 +1,30 @@
 import 'package:device_preview/device_preview.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'firebase_options.dart';
-import 'Home.dart';
+import 'package:rich_furniture/product/ProductData/dataDetails_model.dart';
 
-void main() async{
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(const MyApp());
+import 'Drawer_model/furniture/callous/callous.dart';
+import 'Drawer_model/furniture/telev/tabelTv.dart';
+import 'Drawer_model/storage/unit.dart';
+import 'home/Home.dart';
 
+void main() {
+  runApp(DevicePreview(
+    enabled: true,
+    builder: (context) =>  MyApp(
+      products: tableTvProducts, // Initialize the products list
+      title: 'وحدات تليفزيون',  // Set the title
+    ),
+  ));
 }
+
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final List<Product> products;
+  final String title;
+
+  const MyApp({super.key, required this.products, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +41,10 @@ class MyApp extends StatelessWidget {
             ],
           ),
           debugShowCheckedModeBanner: false,
-          home: HomeScreen(),
+          home: HomeScreen(
+            title: title,
+            products: (title == 'وحدات تليفزيون') ? tableTvProducts : callousProducts,
+          ),
         );
       },
     );

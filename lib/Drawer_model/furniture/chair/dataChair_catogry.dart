@@ -2,32 +2,32 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:rich_furniture/Drawer_model/furniture/bed/bed_categ.dart';
+import 'package:rich_furniture/Drawer_model/furniture/chair/chair_categ.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../Drawer_model/drawer.dart';
-import '../../appBar/Bar.dart';
-import '../../appBar/appBarr_phone.dart';
-import '../ProductDetails/details_screen.dart';
-import 'dataDetails_model.dart';
-
-class ProductGridScreen extends StatefulWidget {
+import '../../../../appBar/Bar.dart';
+import '../../../../appBar/appBarr_phone.dart';
+import '../../../../home/catogery_home.dart';
+import '../../../../product/ProductData/dataDetails_model.dart';
+import '../../../../product/ProductDetails/details_screen.dart';
+import '../../drawer.dart';
+class DataChairCatogryProduct extends StatefulWidget {
   final List<Product> products;
   final String title;
 
-  const ProductGridScreen({
+  const DataChairCatogryProduct({
     super.key,
     required this.products,
     required this.title,
   });
 
   @override
-  _ProductGridScreenState createState() => _ProductGridScreenState();
+  State<DataChairCatogryProduct> createState() => _DataChairCatogryProductState();
 }
 
-class _ProductGridScreenState extends State<ProductGridScreen> {
+class _DataChairCatogryProductState extends State<DataChairCatogryProduct> {
   late List<Product> sortedProducts;
-
-  @override
   void initState() {
     super.initState();
     sortedProducts = List.from(widget.products);
@@ -39,14 +39,13 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
       ascending ? a.newPrice.compareTo(b.newPrice) : b.newPrice.compareTo(a.newPrice));
     });
   }
-
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
     var screenHeight = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.height;
 
     var crossAxisCount = screenWidth > 1200 ? 4 : screenWidth > 800 ? 3 : 2;
-
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: screenWidth < 600 ?
@@ -58,10 +57,10 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Row(
+              child:Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8,),
                   OutlinedButton(
                     onPressed: () {
                       showMenu(
@@ -70,17 +69,19 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                         items: [
                           PopupMenuItem(
                             value: 'LowToHigh',
-                            child: Text(
-                              'السعر: من الاقل للاكثر',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاقل للاكثر',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                           PopupMenuItem(
                             value: 'HighToLow',
-                            child: Text(
-                              'السعر: من الاكثر للاقل',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاكثر للاقل',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                         ],
                       ).then((value) {
@@ -93,21 +94,100 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                     },
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Color(0xFF964B00),
-                      backgroundColor: Colors.white,
-                      side: BorderSide(color: Color(0xFF964B00)),
+                      backgroundColor: Colors.white,               // Text color
+                      side: BorderSide(color: Color(0xFF964B00)), // Border color
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(8), // Rounded corners
                       ),
                     ),
-                    child: Text(
-                      'تصفية النتائج',
-                      style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                    ),
+                    child: Text('تصفية النتائج',
+                      style: TextStyle(
+                          fontFamily: 'arb',
+                          fontWeight: FontWeight.bold
+                      ),),
+                  ),
+                  Builder(
+                    builder: (context) {
+                      return PopupMenuTheme(
+                        data: PopupMenuThemeData(
+                          color: Colors.white,
+                        ),
+                        child: Container(),
+                      );
+                    },
                   ),
                 ],
               ),
+        
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    FurnitureCard(
+                      title: 'كرسي الطعام',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fdinning_chair-removebg-preview.png?alt=media&token=43f30b90-dd6d-4b95-8be2-e94d89b48732',
+                      products: foodchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'كرسي بار',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fbar_chair-removebg-preview.png?alt=media&token=aa2a093c-63e3-4825-9f40-5c610dda6b93',
+                      products: barchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'كرسي جانبي',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fside_chair-removebg-preview.png?alt=media&token=e81dbab8-372f-4c81-9614-4070aa4cb817',
+                      products: sidchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'كرسي هزاز',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Frockie-chair-removebg-preview.png?alt=media&token=b69785a1-d4c2-4082-b80b-56eb0c7ebe75',
+                      products: hamkchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'كرسي استرخاء',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Frecliner-removebg-preview.png?alt=media&token=1e5eec5c-a726-49d7-b17f-9fde080745f4',
+                      products: restchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'كرسي بذراعين',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Farm_chair-removebg-preview.png?alt=media&token=762f1a8d-8889-4e52-bb66-8decdbe53dee',
+                      products: armchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: '    بوف',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fpouf_2-removebg-preview.png?alt=media&token=f912d652-9029-426d-86d8-af0452922517',
+                      products: bofchairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'شزلونج',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2Fchaise-lounge-removebg-preview.png?alt=media&token=97249124-e0dd-4c8a-91d8-39e75a487611',
+                      products: longchairProducts,
+                    ),
+        
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 2,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Wrap(
@@ -267,8 +347,6 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
   }
 }
 
-
-
 class ProductCard extends StatelessWidget {
   final Product product;
 
@@ -299,9 +377,10 @@ class ProductCard extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: screenWidth > 600 ? 25 : 16,
-                      fontFamily: 'arb'),
+                    fontWeight: FontWeight.bold,
+                    fontSize: screenWidth > 600 ? 25 : 16,
+                    fontFamily: 'arb',
+                  ),
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                 ),

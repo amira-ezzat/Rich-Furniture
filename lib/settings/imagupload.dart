@@ -40,14 +40,20 @@ class _HomeScrnState extends State<HomeScrn> {
   // Upload image to Firebase
   Future<void> _uploadFile() async {
     if (kIsWeb && _webImage != null) {
-      // Handle web file upload
+      // رفع الملف في المتصفح
       String fileName = 'web-image-${DateTime.now().millisecondsSinceEpoch}.png';
       String destination = 'images/$fileName';
 
       try {
         Reference ref = FirebaseStorage.instance.ref(destination);
-        UploadTask uploadTask = ref.putData(_webImage!, SettableMetadata(contentType: 'image/png'));
 
+        // تأكد من أنك تستخدم `putData` مع `Uint8List`
+        UploadTask uploadTask = ref.putData(
+          _webImage!,
+          SettableMetadata(contentType: 'image/png'),
+        );
+
+        // انتظر حتى تكتمل عملية الرفع
         await uploadTask.whenComplete(() async {
           String imageUrl = await ref.getDownloadURL();
           print('File uploaded successfully, URL: $imageUrl');
@@ -57,14 +63,20 @@ class _HomeScrnState extends State<HomeScrn> {
         print('Error uploading image: $e');
       }
     } else if (_image != null) {
-      // Handle mobile/desktop file upload
+      // رفع الملف في الموبايل
       String fileName = basename(_image!.path);
       String destination = 'images/$fileName';
 
       try {
         Reference ref = FirebaseStorage.instance.ref(destination);
-        UploadTask uploadTask = ref.putFile(_image!, SettableMetadata(contentType: 'image/png'));
 
+        // رفع الصورة من ملف في الموبايل
+        UploadTask uploadTask = ref.putFile(
+          _image!,
+          SettableMetadata(contentType: 'image/png'),
+        );
+
+        // انتظر حتى تكتمل عملية الرفع
         await uploadTask.whenComplete(() async {
           String imageUrl = await ref.getDownloadURL();
           print('File uploaded successfully, URL: $imageUrl');
@@ -75,6 +87,7 @@ class _HomeScrnState extends State<HomeScrn> {
       }
     }
   }
+
 
   // Show image in a dialog
   void _showImage(String imageUrl) {

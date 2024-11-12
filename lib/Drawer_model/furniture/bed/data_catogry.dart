@@ -2,32 +2,32 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:rich_furniture/Drawer_model/furniture/bed/bed_categ.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../Drawer_model/drawer.dart';
-import '../../appBar/Bar.dart';
-import '../../appBar/appBarr_phone.dart';
-import '../ProductDetails/details_screen.dart';
-import 'dataDetails_model.dart';
+import '../../drawer.dart';
+import '../../../appBar/Bar.dart';
+import '../../../appBar/appBarr_phone.dart';
+import '../../../home/catogery_home.dart';
+import '../../../product/ProductDetails/details_screen.dart';
+import '../../../product/ProductData/dataDetails_model.dart';
 
-class ProductGridScreen extends StatefulWidget {
+class DataCatogryProduct extends StatefulWidget {
   final List<Product> products;
   final String title;
 
-  const ProductGridScreen({
+  const DataCatogryProduct({
     super.key,
     required this.products,
     required this.title,
   });
 
   @override
-  _ProductGridScreenState createState() => _ProductGridScreenState();
+  State<DataCatogryProduct> createState() => _DataCatogryProductState();
 }
 
-class _ProductGridScreenState extends State<ProductGridScreen> {
+class _DataCatogryProductState extends State<DataCatogryProduct> {
   late List<Product> sortedProducts;
-
-  @override
   void initState() {
     super.initState();
     sortedProducts = List.from(widget.products);
@@ -44,9 +44,10 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
     var screenHeight = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.height;
+
 
     var crossAxisCount = screenWidth > 1200 ? 4 : screenWidth > 800 ? 3 : 2;
-
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: screenWidth < 600 ?
@@ -58,10 +59,10 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Row(
+              child:Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8,),
                   OutlinedButton(
                     onPressed: () {
                       showMenu(
@@ -70,17 +71,19 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                         items: [
                           PopupMenuItem(
                             value: 'LowToHigh',
-                            child: Text(
-                              'السعر: من الاقل للاكثر',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاقل للاكثر',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                           PopupMenuItem(
                             value: 'HighToLow',
-                            child: Text(
-                              'السعر: من الاكثر للاقل',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاكثر للاقل',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                         ],
                       ).then((value) {
@@ -93,21 +96,86 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                     },
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Color(0xFF964B00),
-                      backgroundColor: Colors.white,
-                      side: BorderSide(color: Color(0xFF964B00)),
+                      backgroundColor: Colors.white,               // Text color
+                      side: BorderSide(color: Color(0xFF964B00)), // Border color
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(8), // Rounded corners
                       ),
                     ),
-                    child: Text(
-                      'تصفية النتائج',
-                      style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                    ),
+                    child: Text('تصفية النتائج',
+                      style: TextStyle(
+                          fontFamily: 'arb',
+                          fontWeight: FontWeight.bold
+                      ),),
+                  ),
+                  Builder(
+                    builder: (context) {
+                      return PopupMenuTheme(
+                        data: PopupMenuThemeData(
+                          color: Colors.white,
+                        ),
+                        child: Container(),
+                      );
+                    },
                   ),
                 ],
               ),
+        
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    FurnitureCard(
+                      title: 'سوبر كينج',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2F%D8%B3%D9%88%D8%A8%D8%B1.jpg?alt=media&token=39ddb85d-cbc3-4bcc-b58f-b507deca3d6f',
+                      products: supKingProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'سرير كينج',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2F%D9%83%D9%8A%D9%86%D8%AC.jpg?alt=media&token=3a396a64-6e0f-448a-be1e-fc40bbbf3266',
+                      products: kingProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'سرير كوين',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2F%D9%83%D9%88%D9%8A%D9%86.jpg?alt=media&token=84a9fa29-e7fe-4fd7-abea-934afbae586c',
+                      products: queenProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'سرير فردي',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2F%D9%81%D8%B1%D8%AF%D9%8A.jpg?alt=media&token=6151434c-0072-4e86-9e84-0c82dacb5bc9',
+                      products: onlyProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'سرير طابقين',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2F%D8%B7%D8%A7%D8%A8%D9%82%D9%8A%D9%86.jpg?alt=media&token=d47d57a7-9f1a-4125-b8d4-b99eb8851fbb',
+                      products: towProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    FurnitureCard(
+                      title: 'سرير اطفال',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/images%2F62220573087224-removebg-preview.png?alt=media&token=30e28413-32a5-41eb-94f1-52482964816c',
+                      products: kidsProducts,
+                    ),
+        
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 2,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Wrap(
@@ -267,24 +335,28 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
   }
 }
 
-
-
-class ProductCard extends StatelessWidget {
+class ProductCard extends StatefulWidget {
   final Product product;
 
   const ProductCard({super.key, required this.product});
 
   @override
+  State<ProductCard> createState() => _ProductCardState();
+}
+
+class _ProductCardState extends State<ProductCard> {
+  @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
     return Card(
       color: Colors.white,
+
       elevation: 0.5,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.network(
-            product.imageUrl!,
+            widget.product.imageUrl!,
             height: screenWidth < 600 ? 140 : 200,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -295,13 +367,14 @@ class ProductCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  product.name,
+                  widget.product.name,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: screenWidth > 600 ? 25 : 16,
-                      fontFamily: 'arb'),
+                    fontWeight: FontWeight.bold,
+                    fontSize: screenWidth > 600 ? 25 : 16,
+                    fontFamily: 'arb',
+                  ),
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                 ),
@@ -312,7 +385,7 @@ class ProductCard extends StatelessWidget {
                       : MainAxisAlignment.start,
                   children: [
                     Text(
-                      '${product.newPrice.toStringAsFixed(3)} جنية',
+                      '${widget.product.newPrice.toStringAsFixed(3)} جنية',
                       style: TextStyle(
                         color: Color(0xFF964B00),
                         fontWeight: FontWeight.bold,
@@ -335,7 +408,7 @@ class ProductCard extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) =>
-                                  ProductDetailScreen(product: product),
+                                  ProductDetailScreen(product: widget.product),
                             ),
                           );
                         },
@@ -349,6 +422,7 @@ class ProductCard extends StatelessWidget {
                         ),
                       ),
                     ),
+
                   ],
                 ),
                 const SizedBox(height: 8),

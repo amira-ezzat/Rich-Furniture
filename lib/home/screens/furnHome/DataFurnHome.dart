@@ -2,32 +2,41 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:rich_furniture/Drawer_model/furniture/bed/bed_categ.dart';
+import 'package:rich_furniture/Drawer_model/furniture/chair/chair_categ.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../Drawer_model/drawer.dart';
-import '../../appBar/Bar.dart';
-import '../../appBar/appBarr_phone.dart';
-import '../ProductDetails/details_screen.dart';
-import 'dataDetails_model.dart';
-
-class ProductGridScreen extends StatefulWidget {
+import '../../../../appBar/Bar.dart';
+import '../../../../appBar/appBarr_phone.dart';
+import '../../../../home/catogery_home.dart';
+import '../../../../product/ProductData/dataDetails_model.dart';
+import '../../../../product/ProductDetails/details_screen.dart';
+import '../../../Drawer_model/categories_drawer.dart';
+import '../../../Drawer_model/drawer.dart';
+import '../../../Drawer_model/furniture/bed/bed.dart';
+import '../../../Drawer_model/furniture/callous/callous.dart';
+import '../../../Drawer_model/furniture/chair/chair.dart';
+import '../../../Drawer_model/furniture/kids/kids.dart';
+import '../../../Drawer_model/furniture/room/rom.dart';
+import '../../../Drawer_model/furniture/table/table.dart';
+import '../../../Drawer_model/furniture/telev/tabelTv.dart';
+import 'furniture.dart';
+class DataFurnHome extends StatefulWidget {
   final List<Product> products;
   final String title;
 
-  const ProductGridScreen({
+  const DataFurnHome({
     super.key,
     required this.products,
     required this.title,
   });
 
   @override
-  _ProductGridScreenState createState() => _ProductGridScreenState();
+  State<DataFurnHome> createState() => _DataFurnHomeState();
 }
 
-class _ProductGridScreenState extends State<ProductGridScreen> {
+class _DataFurnHomeState extends State<DataFurnHome> {
   late List<Product> sortedProducts;
-
-  @override
   void initState() {
     super.initState();
     sortedProducts = List.from(widget.products);
@@ -39,11 +48,11 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
       ascending ? a.newPrice.compareTo(b.newPrice) : b.newPrice.compareTo(a.newPrice));
     });
   }
-
   @override
   Widget build(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
     var screenHeight = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.height;
 
     var crossAxisCount = screenWidth > 1200 ? 4 : screenWidth > 800 ? 3 : 2;
 
@@ -58,10 +67,10 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Row(
+              child:Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8,),
                   OutlinedButton(
                     onPressed: () {
                       showMenu(
@@ -70,17 +79,19 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                         items: [
                           PopupMenuItem(
                             value: 'LowToHigh',
-                            child: Text(
-                              'السعر: من الاقل للاكثر',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاقل للاكثر',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                           PopupMenuItem(
                             value: 'HighToLow',
-                            child: Text(
-                              'السعر: من الاكثر للاقل',
-                              style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                            ),
+                            child: Text('السعر: من الاكثر للاقل',
+                              style: TextStyle(
+                                  fontFamily: 'arb',
+                                  fontWeight: FontWeight.bold
+                              ),),
                           ),
                         ],
                       ).then((value) {
@@ -93,21 +104,92 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                     },
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Color(0xFF964B00),
-                      backgroundColor: Colors.white,
-                      side: BorderSide(color: Color(0xFF964B00)),
+                      backgroundColor: Colors.white,               // Text color
+                      side: BorderSide(color: Color(0xFF964B00)), // Border color
                       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(8), // Rounded corners
                       ),
                     ),
-                    child: Text(
-                      'تصفية النتائج',
-                      style: TextStyle(fontFamily: 'arb', fontWeight: FontWeight.bold),
-                    ),
+                    child: Text('تصفية النتائج',
+                      style: TextStyle(
+                          fontFamily: 'arb',
+                          fontWeight: FontWeight.bold
+                      ),),
+                  ),
+                  Builder(
+                    builder: (context) {
+                      return PopupMenuTheme(
+                        data: PopupMenuThemeData(
+                          color: Colors.white,
+                        ),
+                        child: Container(),
+                      );
+                    },
                   ),
                 ],
               ),
+
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Furniture(
+                      title: '     سرير',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2F%D8%B3%D8%B1%D9%8A%D8%B1.jpg?alt=media&token=699d63d6-899d-456c-9d19-4f9b819c7d77',
+                      products: bedProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    Furniture(
+                      title: '  كراسي',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2F%D9%83%D8%B1%D8%A7%D8%B3%D9%8A.jpg?alt=media&token=7b1981bc-6da4-426f-a5e8-99d39c05f3fc',
+                      products: chairProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    Furniture(
+                      title: '   كنب',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2Fc.jpg?alt=media&token=9aa27415-cda8-471d-8a62-633a33ad72b0',
+                      products: callousProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    Furniture(
+                      title: '  ترابيزة',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2F%D8%AA%D8%B1%D8%A7%D8%A8%D9%8A%D8%B2%D8%A7%D8%AA.jpg?alt=media&token=cbf4172e-dd30-4cc3-85f2-a468765e1942',
+                      products: tableProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    Furniture(
+                      title: 'ترابيزة تليفزيون',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2F%D8%AA%D9%84%D9%8A%D9%81%D8%B2.jpg?alt=media&token=7e8c0051-946e-4de9-a047-a4cc1ed6d437',
+                      products: tableTvProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    Furniture(
+                      title: 'غرف كاملة',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2F%D9%83%D8%A7%D9%85%D9%84%D8%A9.jpg?alt=media&token=20f2cf0d-5608-40b4-b2cc-e5777f696ec0',
+                      products: roomProducts,
+                    ),
+                    const SizedBox(width: 22),
+                    Furniture(
+                      title: 'حديثي الولادة',
+                      image:
+                      'https://firebasestorage.googleapis.com/v0/b/rich-furniture-43b22.appspot.com/o/furn%2F%D8%AD%D8%AF%D9%8A%D8%AB.jpg?alt=media&token=f8c7cadd-aaf7-49f6-8e13-7a23a72e5217',
+                      products: kidProducts,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 2,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Wrap(
@@ -260,14 +342,13 @@ class _ProductGridScreenState extends State<ProductGridScreen> {
                 ),
               ),
             ),
+
           ],
         ),
       ),
     );
   }
 }
-
-
 
 class ProductCard extends StatelessWidget {
   final Product product;
@@ -299,9 +380,10 @@ class ProductCard extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: screenWidth > 600 ? 25 : 16,
-                      fontFamily: 'arb'),
+                    fontWeight: FontWeight.bold,
+                    fontSize: screenWidth > 600 ? 25 : 16,
+                    fontFamily: 'arb',
+                  ),
                   textAlign: TextAlign.right,
                   textDirection: TextDirection.rtl,
                 ),
